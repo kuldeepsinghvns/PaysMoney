@@ -1,0 +1,139 @@
+.intro {
+    background-color: #03BAEE;
+    font-family: Georgia, serif;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+
+a {
+
+    margin-right: 10px;
+
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    margin-top: 10px;
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+
+}
+
+.social a .fa-brands {
+    font-size: 25px;
+    line-height: 40px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+
+}
+
+.social a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social a:hover::after {
+    top: 0;
+
+}
+
+.social a:hover .fa-brands {
+    top: 0;
+
+}
+
+.social a:hover {
+    transform: translateY(-10px);
+}
+
+.msg a {
+    color: #FFFFFF;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    margin-left: 50px;
+
+}
+.navbar1{
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 30px #D0C9D7;  
+    
+}
+.nav-item{
+    margin-top: 30px;
+    margin-right: 25px;
+}
+h3{
+    font-family:Blippo, fantasy;
+    font-size: 40px;
+    background-image: linear-gradient(43deg, #008B8B,#8FBC8F);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.about{
+    font-family: Bebas Neue; 
+    font-size: 25px;
+    box-shadow: 10px 10px 30px #D0C9D7;
+}
+
+
+.com {
+    font-family: 'Stencil Std', fantasy;
+    color: #FE4C1C;
+    font-size: 45px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px #D0C9D7;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+/* When not hovered, the box is at its original position */
+.com {
+    transform: translateY(0);
+}
+
+/* When hovered, the box moves up by 10px */
+.com:hover {
+    transform: translateY(-10px);
+}
+
+/* Optional: Add some visual effect using ::after pseudo-element */
+.com::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 0.5s;
+}
+
+.com:hover::after {
+    top: 0;
+}
+
+
