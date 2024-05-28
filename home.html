@@ -8,7 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="home.css">
+    <link href='https://fonts.googleapis.com/css?family=Mali' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/5be1b5beb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 
 <body>
@@ -33,16 +36,24 @@
         <!-- NavBar Start -->
 
         <div class="row">
-            <div class="col-md-12 navbar1">
-                <ul class="nav  justify-content-end" style="margin-right: 40px; margin-bottom: 25px;">
+            <div class="col-md-12 navbar1 ">
+                <ul class="nav  justify-content-end  " style="margin-right: 40px; margin-bottom: 25px;">
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#" style="color: black;">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" style="color: black;">ABOUT</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: black;">SERVICE</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            style="color: black;">
+                            SERVICE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Added aria-labelledby -->
+                            <li><a class="dropdown-item" href="#">Solution </a></li>
+                            <li><a class="dropdown-item" href="#">API Services </a></li>
+                            <!-- Add more dropdown items as needed -->
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" style="color: black;">CONTACT</a>
@@ -131,10 +142,26 @@
             <div class="col-md-4"></div>
         </div>
         <br>
+        <br>
+        <br>
+        <!-- Image Slider Start-->
         <div class="row">
-            <div class="col-md-12"><center>Image Set</center></div>
+            <div class="col-md-12">
+                <div class="slider">
+                    <div><img src="pics/airtel.png" alt="Image 1"></div>
+                    <div><img src="pics/jio.png" alt="Image 2"></div>
+                    <div><img src="pics/bsnl.png" alt="Image 3"></div>
+                    <div><img src="pics/tatasky.png" alt="Image 4"></div>
+                    <div><img src="pics/vi.png" alt="Image 5"></div>
+                    <div><img src="pics/jio.png" alt="Image 6"></div>
+                    <!-- <div><img src="pics/vi.png" alt="Image 7"></div> -->
+                </div>
+            </div>
         </div>
+        <!-- Image Slider End -->
         <!-- Partners End -->
+        <br>
+        <br>
         <br>
         <!-- Services Start -->
         <div class="row">
@@ -146,35 +173,254 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4 d-flex justify-content-center com">
-                <h4 style=" font-family: 'Stencil Std', fantasy;color: #FE4C1C;font-size: 45px;"><center>We Provide Best
-                    Services</center></h4>
+                <h4 style=" font-family: 'Stencil Std', fantasy;color: #FE4C1C;font-size: 45px;">
+                    <center>We Provide Best
+                        Services</center>
+                </h4>
 
             </div>
             <div class="col-md-4"></div>
         </div>
+        <br><br>
+        <!-- AEPS Services  Start-->
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h4 style=" font-family: 'Stencil Std', fantasy;color: #FE4C1C;font-size: 45px;">AEPS Software</h4>
+                <p>Aadhaar Enabled Payment System (AEPS) is a payment service that allows a bank customer to use Aadhaar
+                    as his/her identity to access his/her Aadhaar enabled bank account and perform basic banking
+                    transactions like balance enquiry, cash withdrawal, remittances through a Business Correspondent.
+                </p>
+
+            </div>
+            <div class="col-md-5 d-flex justify-content-end "><img src="pics/adhar.jpg" alt="" height="350px"></div>
+            <div class="col-md-1"></div>
+        </div>
+        <!-- AEPS Services End -->
+        <!-- E-commerce Solution  Start-->
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-5 d-flex justify-content-end "><img src="pics/ecommerce_design.jpg" alt=""
+                    height="350px"></div>
+            <div class="col-md-1"></div>
+
+            <div class="col-md-5">
+                <h4 style=" font-family: 'Stencil Std', fantasy;color: #FE4C1C;font-size: 45px;">E-commerce Solution
+                </h4>
+                <p>Bharat Bill Payment System (BBPS) is a RBI mandated system which offers integrated and interoperable
+                    bill payment services to customers across geographies with certainty, reliability and safety of
+                    transactions.
+                </p>
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <!-- E-commerce Solution End -->
+        <!-- Web Designing Start -->
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h4 style=" font-family: 'Stencil Std', fantasy;color: #FE4C1C;font-size: 45px;">Web Designing</h4>
+                <p>FASTag is an electronic toll collection system in India that enables automatic deduction of toll
+                    charges while passing through toll plazas.
+                </p>
+
+            </div>
+            <div class="col-md-5 d-flex justify-content-end "><img src="pics/Software_development.jpg" alt=""
+                    height="350px"></div>
+            <div class="col-md-1"></div>
+        </div>
+        <!-- Web Designing End -->
+        <!-- Travel Portal Start -->
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-5 d-flex justify-content-end "><img src="pics/travel_portal.jpg" alt="" height="350px">
+            </div>
+            <div class="col-md-1"></div>
+
+            <div class="col-md-5">
+                <h4 style=" font-family: 'Stencil Std', fantasy;color: #FE4C1C;font-size: 45px;">Travel Portal </h4>
+                <p>Micro ATM services refer to the provision of basic banking facilities and transactions through
+                    handheld devices operated by banking agents or business correspondents.
+                </p>
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <!-- Travel Portal End -->
+        <!-- API Services Start -->
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h4 style=" font-family: 'Stencil Std', fantasy;color: #FE4C1C;font-size: 45px;">API Services</h4>
+                <p>Our APIs are designed for easy integration into your applications, websites, or systems. Get up and
+                    running quickly with our developer-friendly documentation.
+                </p>
+
+            </div>
+            <div class="col-md-5 d-flex justify-content-end "><img src="pics/api-services.jpg" alt="" height="350px">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <!-- API Services End -->
+        <!-- NSDL  Start -->
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-5 d-flex justify-content-end "><img src="pics/UTI_PAN.jpg" alt="" height="250px">
+            </div>
+            <div class="col-md-1"></div>
+
+            <div class="col-md-5">
+                <h4 style=" font-family: 'Stencil Std', fantasy;color: #FE4C1C;font-size: 45px;">NSDL & UTI PAN Software
+                </h4>
+                <p>NSDL and UTIITSL are authorized service providers for PAN services in India. Individuals can choose
+                    between these entities for PAN-related transactions, including application, verification, and
+                    modifications. The services provided aim to simplify and streamline the process of obtaining and
+                    managing PAN cards for taxpayers and entities across the country.
+                </p>
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <!-- NSDL  End -->
+        <!-- Money Transfer software Start -->
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h4 style=" font-family: 'Stencil Std', fantasy;color: #FE4C1C;font-size: 45px;">Money Transfer software
+                </h4>
+                <p>Applying for a credit card involves a straightforward process, usually requiring you to meet certain
+                    eligibility criteria and submit necessary documents.
+                </p>
+
+            </div>
+            <div class="col-md-5 d-flex justify-content-end "><img src="pics/Money_Transfer.jpg" alt="" height="350px">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <!-- Money Transfer software End-->
         <!-- Services End -->
         <!-- Footer Start -->
         <div class="row">
             <div class="col-md-12">
                 <div class="container">
+                    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                        <div class="col mb-4">
+                            <ab href="/" class="d-flex align-items-start mb-3">
+                                <img src="pics/paysmoney.jpg" height="100px" alt="">
+                            </ab>
+                            <b class="text-body-secondary" style="font-size: 20px;">Pays Money Technology offers a
+                                plethora of utility services
+                                to its consumers in terms of AEPS, Domestic Money Remittance, Mobile and DTH recharges,
+                                Rail, Air and Bus reservation and Utility Bill collections, Digital Wallets e.t.c..</b>
+                        </div>
+
+                        <div class="col mb-2">
+
+                        </div>
+
+                        <div class="col mb-3">
+                            <b style="color: #03BAEE;">Quick Links</b>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Contact</a></li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">APIservices</a></li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Solution</a></li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Business</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col mb-3">
+                            <b style="color: #03BAEE;">Legal</b>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy
+                                        Policy</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms &
+                                        Conditions</a></li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Cancellation & Refund</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col mb-3">
+                            <b style="color: #03BAEE;">Contact</b>
+
+                            <div class="nav-link p-0 text-body-secondary" style="margin-top: 25px;"><i
+                                    class="fa-solid fa-envelope"></i>:Info@paysmoney.in</div>
+                            <div class="nav-link p-0 text-body-secondary" style="margin-top: 25px;"><i
+                                    class="fa-solid fa-phone"></i> :+91 9579486009</a></div>
+                            <div class="nav-link p-0 text-body-secondary" style="margin-top: 25px; font-size: 15px;"><i
+                                    class="fa-regular fa-address-book"> Sara Samrudhi Park, <br><br>
+
+                                    Behind MIT College <br><br> Rotegaon,Vaijapur - <br><br> 423701</i></div>
+                        </div>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container" style=" background-color: #03BAEE; color: whitesmoke;">
                     <footer class="py-3 my-4">
                         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: whitesmoke;">Home</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2"
+                                    style="color: whitesmoke;">Features</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2"
+                                    style="color: whitesmoke;">Pricing</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: whitesmoke;">FAQs</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: whitesmoke;">About</a>
+                            </li>
                         </ul>
-                        <p class="text-center text-body-secondary">&copy; Copyright © 2023 PaysMoney All Rights Reserved.</p>
+                        <p class="text-center">&copy; Copyright © 2023 PaysMoney All Rights
+                            Reserved.</p>
                     </footer>
                 </div>
             </div>
         </div>
         <!-- Footer End -->
+        <!-- Scroll Top Start -->
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2 d-flex justify-content-end">
+
+                <a href="#" style="margin-left: 10px;"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="currentColor" class="bi bi-chevron-double-up top" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z" />
+                        <path fill-rule="evenodd"
+                            d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                    </svg></a>
+            </div>
+        </div>
+        <!-- Scroll Top End -->
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>'
+            });
+        });
+    </script>
 </body>
 
 </html>
