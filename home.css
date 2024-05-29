@@ -1,17 +1,34 @@
 body {
-    font-family: 'Mali';
+    /* font-family: 'Mali'; */
     font-size: 22px;
+    background-color: white;
 
 }
 
 .intro {
-    background-color: #03BAEE;
+    background-color:orange;
     font-family: Georgia, serif;
     color: whitesmoke;
     font-size: 20px;
 
 }
 
+.li1 a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: coral;
+    margin: auto;
+    display: block;
+}
+.li1 a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
+.li1 a:hover{
+    color: #C0C0C0;
+    
+}
 
 a {
 
@@ -73,7 +90,7 @@ a {
 }
 
 .msg a {
-    color: #FFFFFF;
+    color: white;
     height: 25px;
     width: 25px;
     text-align: center;
@@ -109,15 +126,17 @@ a {
 h3 {
     font-family: Blippo, fantasy;
     font-size: 40px;
-    background-image: linear-gradient(43deg, #03BAEE, #79b7ded2);
+    background-image: linear-gradient(43deg, orange, #FF6665);
     -webkit-background-clip: text;
     color: transparent;
 }
 
 .about {
-    font-family: Bebas Neue;
-    font-size: 25px;
-    box-shadow: 10px 10px 30px #D0C9D7;
+    /* font-family: Bebas Neue; */
+    font-size: 23px;
+    color: black;
+    /* text-shadow: 1px 1px 1px 1px  white; */
+    /* box-shadow: 10px 10px 30px #D0C9D7; */
 }
 
 
@@ -126,7 +145,7 @@ h3 {
     color: #FE4C1C;
     font-size: 45px;
     border-radius: 10px;
-    box-shadow: 10px 10px 30px #D0C9D7;
+    box-shadow: 10px 10px 30px lightblue;
     position: relative;
     overflow: hidden;
     transition: transform  0.5s linear;
@@ -139,7 +158,7 @@ h3 {
 
 /* When hovered, the box moves up by 10px */
 .com:hover {
-    transform: translateY(-15px);
+    transform: translateY(-8px);
 }
 
 /* Optional: Add some visual effect using ::after pseudo-element */
@@ -167,7 +186,7 @@ p{
 
 /* Scroll Top */
 .top {
-    background-color: #03BAEE;
+    background-color: #FFB74D;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -196,5 +215,29 @@ p{
 }
 
 .icons a:hover {
-    color: #03BAEE; 
+    color: orange; 
+}
+
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: #FFA500	;
+}
+
+
+.card {
+    width: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px lightblue;
+}
+
+.card-title {
+    font-family: 'Stencil Std', fantasy;
+    font-size: 45px;
+    text-shadow: 3px 3px 2px lightblue;
 }
