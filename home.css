@@ -1,5 +1,5 @@
 body {
-    /* font-family: 'Mali'; */
+    font-family: 'Mali';
     font-size: 22px;
     background-color: white;
 
@@ -112,11 +112,15 @@ a {
 }
 
 
+.navbar-custom {
+    transition: top 0.3s;
+}
 .navbar-fixed {
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure navbar is on top of other content */
+    z-index: 1000;
+    background-color: white;
 }
 .nav-item {
     margin-top: 30px;
@@ -185,14 +189,65 @@ p{
 
 
 /* Scroll Top */
-.top {
-    background-color: #FFB74D;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    color: whitesmoke;
-    
+.scroll-top-container {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
 }
+
+.scroll-top-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; /* Adjust size as needed */
+    background-color: #f8f9fa; 
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.scroll-top-button:hover {
+    background-color: #e9ecef; 
+}
+
+.scroll-top-button svg {
+    fill: #000; 
+}
+
+/* Whatsapp Content */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px; /* Adjust this value to position the button higher or lower */
+    left: 20px; /* Adjust this value to position the button left or right */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-color: #25d366; /* WhatsApp green color */
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline */
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57; /* Hover effect */
+}
+
+.whatsapp-button i {
+    font-size: 24px; /* Icon size */
+}
+
+
+
 
 /* Image Slider */
 .slider img {
