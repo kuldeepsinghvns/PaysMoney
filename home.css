@@ -160,7 +160,6 @@ h3 {
     transform: translateY(0);
 }
 
-/* When hovered, the box moves up by 10px */
 .com:hover {
     transform: translateY(-8px);
 }
