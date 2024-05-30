@@ -1,0 +1,79 @@
+
+.login-background {
+    
+    background: linear-gradient(-80deg, #D3D3D3, #c5ad8e, #ADD8E6,#EAEDF1);
+    
+  
+}
+
+
+
+.creative {
+    background: linear-gradient(to right, #eb8686, #f39c2b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.login-form{
+    background-color: white;
+    box-shadow: 10px 10px 30px rgb(59, 59, 20);
+    height: 70vh;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+}
+
+.input-group .form-control {
+    border: solid 2px  #0069AA;
+}
+
+.input-group .form-control:focus {
+    border-color: #0069AA;
+    box-shadow: none;
+}
+
+.input-group .form-control:hover {
+    border-color: orange;
+}
+
+.btn-primary {
+    padding: 8px 20px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+    width: 80px;
+}
+.btn-primary {
+    border-radius: 25px;
+    background: linear-gradient(-45deg, orange, #ff4517);
+    border-color: #ff8c00;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(-45deg, rgb(255, 0, 225), #ffec17);
+    border-color: #ff8c00;
+}
+
+/* Icones Style */
+.logo-section {
+    border: 2px solid #0069AA; 
+
+    border-radius: 8px; /
+}
+
+.logo-section:hover {
+    border-color: orange; 
+}
+
+.logo-section .form-control {
+    border-color: #0069AA;
+}
+
+.logo-section .form-control:focus {
+    border-color: #0069AA;
+    box-shadow: none;
+}
+
+.logo-section .form-control:hover {
+    border-color: orange;
+}
