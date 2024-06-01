@@ -1,63 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Add custom styles here if needed */
+        img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            max-height: 70vh; /* Limit maximum height */
+        }
+        .jumbotron {
+            background-color: transparent; /* Transparent background */
+            margin-bottom: 0; /* Remove margin */
+        }
+        .card {
+            position: relative; /* Relative positioning */
+            z-index: 1; /* Ensure cards appear above the image */
+        }
+        .overlap {
+            margin-top: -50px; /* Adjust margin to control the overlap */
+            z-index: 2; /* Ensure cards appear above the image */
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12"></div>
-        </div>
-        <br>
-        <!-- Image start -->
-        <div class="row">
-            <div class="col-md-12">
-                <img src="pics/financial.jpg" alt="" height="500px" width="100%">
+    <header>
+        <!-- Your header code -->
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="pics/financial.jpg" alt="Financial Services Image">
+                </div>
             </div>
-        </div>
-        <!-- Image End -->
-        <!-- About us Start -->
-        <br><br><br>
-        <div class="row" style="background-color: #D8F1FD;">
-            <div class="col-md-2"></div>
-            <div class="col-md-4" >
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>About</h2>
+            <div class="row">
+                <!-- First card -->
+                <div class="col-md-4 overlap">
+                    <div class="card" style="box-shadow: 10px 10px 30px black;">
+                        <div class="card-body">
+                            <h1 class="card-title">Service 1</h1>
+                            <p class="card-text">Description of Service 1</p>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia soluta vero recusandae
-                            labore deserunt accusantium quod dignissimos nam quam ea eligendi.</p>
+                <!-- Second card -->
+                <div class="col-md-4 overlap">
+                    <div class="card" style="box-shadow: 10px 10px 30px black;">
+                        <div class="card-body">
+                            <h1 class="card-title">Service 2</h1>
+                            <p class="card-text">Description of Service 2</p>
+                        </div>
                     </div>
                 </div>
-
+                <!-- Third card -->
+                <div class="col-md-4 overlap">
+                    <div class="card" style="box-shadow: 10px 10px 30px black;">
+                        <div class="card-body">
+                            <h1 class="card-title">Service 3</h1>
+                            <p class="card-text">Description of Service 3</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-                <p style="color: rgb(134, 134, 197);"><i class="fa-solid fa-bullseye"></i> Get site done</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci inventore enim aliquam
-                    animi soluta.</p>
-            </div>
-            <div class="col-md-1"></div>
+            
         </div>
-        <!-- About us End -->
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    </main>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Your footer code -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
-</html>
