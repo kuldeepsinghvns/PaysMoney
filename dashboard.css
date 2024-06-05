@@ -17,39 +17,37 @@ h2 {
 }
 
 table {
-
   width: 100%;
   border-collapse: collapse;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 20px;
-  align-self: center;
 }
 
-
-
 .table1 {
-  height: auto;
   border-radius: 10px;
-  align-items: center;
   background-color: white;
   box-shadow: 10px 10px 30px lightgray;
   transition: transform 0.3s ease;
-
 }
+
 .table th,
 .table td {
   padding: 20px;
   text-align: center;
-  background-color: white;
-}
- .table tr,.table th,.table td:hover {
-  padding: 20px;
-  text-align: center;
-  background-color: #03BAEE;
-  color: white;
+  background-color: transparent;
+  color: black;
 }
 
-.table1:hover{
-  /* background-color: #03BAEE; */
+.table1:hover {
+  background-image: linear-gradient(-45deg, #03BAEE, #17b7b7);
+  color: white;
+}
+.table1:hover,
+.table1:hover * {
+  color: white;
+}
+.table td{
+  font-size: 20px;
+}
+.td-fixed {
+  background-color: #03BAEE;
+  color: white;
 }
