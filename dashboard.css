@@ -1,0 +1,55 @@
+body {
+  font-family: 'Roboto';
+}
+
+.section-title {
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  font-size: 10px;
+  height: 40px;
+  align-items: center;
+  padding-top: 5px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+table {
+
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  align-self: center;
+}
+
+
+
+.table1 {
+  height: auto;
+  border-radius: 10px;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px 30px lightgray;
+  transition: transform 0.3s ease;
+
+}
+.table th,
+.table td {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+ .table tr,.table th,.table td:hover {
+  padding: 20px;
+  text-align: center;
+  background-color: #03BAEE;
+  color: white;
+}
+
+.table1:hover{
+  /* background-color: #03BAEE; */
+}

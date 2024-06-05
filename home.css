@@ -6,14 +6,17 @@ body {
 }
 
 .intro {
-    background-color:orange;
+    background-color: orange;
     font-family: Georgia, serif;
     color: whitesmoke;
     font-size: 20px;
-
+    padding: 10px 0; /* Added padding for better spacing */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between; /* Space out the items */
 }
 
-.li1 a::after{
+.li1 a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -21,28 +24,28 @@ body {
     margin: auto;
     display: block;
 }
-.li1 a:hover::after{
+
+.li1 a:hover::after {
     width: 100%;
     transition: width 0.3s linear;
 }
-.li1 a:hover{
+
+.li1 a:hover {
     color: #C0C0C0;
-    
 }
 
 a {
-
     margin-right: 10px;
-
 }
 
 .social {
     display: flex;
+    justify-content: center; /* Center social icons */
+    gap: 10px; /* Space between social icons */
 }
 
 .social a {
     margin-top: 10px;
-
     width: 40px;
     height: 40px;
     text-align: center;
@@ -52,7 +55,6 @@ a {
     position: relative;
     overflow: hidden;
     transition: transform 0.5s;
-
 }
 
 .social a .fa-brands {
@@ -61,7 +63,6 @@ a {
     position: relative;
     z-index: 10;
     transition: color 0.5s;
-
 }
 
 .social a::after {
@@ -77,12 +78,10 @@ a {
 
 .social a:hover::after {
     top: 0;
-
 }
 
 .social a:hover .fa-brands {
     top: 0;
-
 }
 
 .social a:hover {
@@ -92,13 +91,54 @@ a {
 .msg a {
     color: white;
     height: 25px;
-    width: 25px;
+    width: auto; /* Adjust width to fit content */
     text-align: center;
     text-decoration: none;
     position: relative;
     overflow: hidden;
-    margin-left: 50px;
+    margin-left: 20px; /* Reduced margin for better fit */
+}
 
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .msg a {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .social {
+        flex-wrap: wrap; /* Allow wrapping for social icons */
+        justify-content: center; /* Center align social icons */
+    }
+
+    .social a {
+        margin: 5px; /* Add margin for better spacing on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 5px 0; /* Reduce padding for smaller screens */
+    }
+
+    .msg {
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .msg a {
+        margin-bottom: 5px; /* Reduce margin for smaller screens */
+    }
+
+    .social a {
+        width: 35px; /* Adjust icon size for smaller screens */
+        height: 35px; /* Adjust icon size for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
 }
 
 .navbar1 {
