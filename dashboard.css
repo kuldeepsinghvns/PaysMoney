@@ -4,6 +4,7 @@ body {
 
 .section-title {
   background-color: orange;
+  /* background-image: linear-gradient(30deg, rgb(234, 90, 90), rgb(239, 199, 199)); */
   color: white;
   border-radius: 5px;
   font-size: 10px;
@@ -24,7 +25,10 @@ table {
 .table1 {
   border-radius: 10px;
   background-color: white;
-  box-shadow: 10px 10px 30px lightgray;
+  /* background-image: linear-gradient(45deg, red,rgb(223, 133, 133)); */
+  color: white;
+  box-shadow: 0px 20px 40px lightgray;
+  
   transition: transform 0.3s ease;
 }
 
@@ -37,7 +41,8 @@ table {
 }
 
 .table1:hover {
-  background-image: linear-gradient(-45deg, #03BAEE, #17b7b7);
+  background-image: linear-gradient(45deg, #03BAEE,#52e368);
+  /* filter: drop-shadow(0px 0px 1px rgb(224, 172, 172));  */
   color: white;
 }
 .table1:hover,
@@ -50,4 +55,5 @@ table {
 .td-fixed {
   background-color: #03BAEE;
   color: white;
+ 
 }
